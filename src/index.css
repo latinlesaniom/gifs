@@ -1,10 +1,9 @@
 :root{
-    --blue:#0378A6;
-    --light-blue:#0388A6;
     --dark-blue: #025E73;
     --celeste: #52D9CB;
-    --white: #fff;
+    --lightblack: #212121;
     --black: #262312;
+    --white: #ffffff;
     --font-size: 1.5rem;
     --inter: 'Inter', sans-serif;
     --roboto: Roboto, sans-serif;
@@ -28,7 +27,7 @@ body{
 }
 
 .header{
-    background-color: var(--dark-blue);
+    background-color: var(--lightblack);
     color: var(--white);
     font-family: var(--inter) ;
     text-align: center;
@@ -39,25 +38,35 @@ body{
 .div{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     justify-content: center;
-    min-height: 10vh;
-    background-color: yellow;
-    width: 20%;
+    align-items: center;
+    width: 50%;
     padding: 0.2rem;
 }
 
 .input{
-    margin: 0.5rem;
+    margin: 1em;
+    border-radius: 5px;
+    padding: 0.5em;
+    width: 100%;
+    height: 100%;
 }
 
 .btn{
-    margin: 0.5rem;
+  background-color: rgb(255, 102, 102);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0, 0.75);
+  font-size: 1rem;
+  width: 12.5rem;
+  margin: auto 0;
 }
 
-
 .card{
-    margin: 1rem;
-    padding: 1.5rem;
+    margin: auto 0;
+    padding: 2rem;
     background-color: var(--black);
 }
 
