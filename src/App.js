@@ -12,9 +12,9 @@ function App() {
         await fetch(url)
                 .then(data => {return data.json()})
                 .then(data => { 
-                  data.data.map(res => {
-                      setGiphy(res.images.fixed_height.url)
-                  })  
+                  setGiphy( data.data.map(res => {
+                    return res.images.fixed_height.url
+                  }))
             }) 
     }
 
@@ -27,7 +27,11 @@ function App() {
       </div>
       <div className='card'>
             {
-              <img src={giphy} />
+              giphy.map(res => {
+                return(
+                  <img src={res} />
+                )
+              })
             }
       </div>  
     </>
