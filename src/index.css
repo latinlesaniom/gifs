@@ -1,14 +1,14 @@
 :root{
-    --dark-blue: #025E73;
-    --celeste: #52D9CB;
-    --lightblack: #212121;
-    --black: #262312;
+    --pink: #D9B4C8;
+    --light-gray: #A097A6;
+    --gray: #5F6273;
+    --dark: #283040;
+    --black: #111C26;
     --white: #ffffff;
     --font-size: 1.5rem;
     --inter: 'Inter', sans-serif;
     --roboto: Roboto, sans-serif;
 }
-
 
 html {
     box-sizing: border-box;
@@ -27,7 +27,6 @@ body{
 }
 
 .header{
-    background-color: var(--lightblack);
     color: var(--white);
     font-family: var(--inter) ;
     text-align: center;
@@ -37,42 +36,46 @@ body{
 
 .div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     width: 50%;
     padding: 0.2rem;
     height: 12vh;
-    
 }
 
 .input{
-    margin: 1em;
+    margin: 1em 0.2em;
     border-radius: 5px;
     padding: 1rem;
     width: 100%;
-    height: 100%;
+    height: 45%;
     font-size: 1.5rem;
     font-family: var(--inter);
 }
 
 .btn{
-  background-color: rgb(255, 102, 102);
+  background-color: var(--gray);
   color: #fff;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 10px;
   border: 1px solid rgb(0, 0, 0, 0.75);
   font-size: 1rem;
-  width: 12.5rem;
   margin: auto 0;
 }
+
+.input:hover{
+    background-color: lavender;
+}
+
+
 
 .card{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 2rem;
+    margin: 1rem;
     padding: 1rem;
     min-height: 75vh;
 }

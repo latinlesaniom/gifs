@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../src/index.css'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faSearch} from '@fortawesome/free-solid-svg-icons'
+
 
 function App() {
   const [keyword, setKeyword ] = useState("Pokemon")
@@ -13,7 +16,6 @@ function App() {
                 .then(data => {return data.json()})
                 .then(data => { 
                   setGiphy( data.data.map(res => {
-                            console.log(res)
                     return  res.images.fixed_height.url
                   }))
             }) 
@@ -26,7 +28,7 @@ function App() {
       <div className='header'><h1>GIPHY</h1></div>
       <div className='div'>
           <input className={'input'} type="search" onChange={e => setKeyword(e.target.value)}/>
-          <button type='submit' className={'btn'} onClick={SearchGiphy}>Search Gifs</button>
+          <button type='submit' className={'btn'} onClick={SearchGiphy}> <FontAwesomeIcon icon={faSearch} /> </button>
       </div>
       <div className='card'>
             {
