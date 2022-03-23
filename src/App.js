@@ -13,10 +13,13 @@ function App() {
                 .then(data => {return data.json()})
                 .then(data => { 
                   setGiphy( data.data.map(res => {
+                            console.log(res)
                     return  res.images.fixed_height.url
                   }))
             }) 
     }
+
+  
 
   return (
     <>
@@ -29,7 +32,7 @@ function App() {
             {
               giphy.map(res => {
                 return(
-                  <img src={res} />
+                  <img  src={res} width={500} height={500}/>
                 )
               })
             }

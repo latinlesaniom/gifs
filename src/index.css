@@ -43,14 +43,18 @@ body{
     align-items: center;
     width: 50%;
     padding: 0.2rem;
+    height: 12vh;
+    
 }
 
 .input{
     margin: 1em;
     border-radius: 5px;
-    padding: 0.5em;
+    padding: 1rem;
     width: 100%;
     height: 100%;
+    font-size: 1.5rem;
+    font-family: var(--inter);
 }
 
 .btn{
@@ -65,10 +69,14 @@ body{
 }
 
 .card{
-    margin: auto 0;
-    padding: 2rem;
-    background-color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+    padding: 1rem;
+    min-height: 75vh;
 }
+
 
 
 
